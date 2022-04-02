@@ -89,7 +89,7 @@ function settime(){
     change();
 }
 
-document.getElementById("imgcontainer").style.backgroundImage="url(./wakeup.PNG)";
+document.getElementById("imgcontainer").style.backgroundImage="url(wakeup.png)";
 document.getElementById('health').innerHTML='GRAB SOME HEALTHY BREAKFAST!!!';
 document.getElementById('gm').innerHTML='GOOD MORNING!!WAKE UP!!';
 
