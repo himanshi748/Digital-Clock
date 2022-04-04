@@ -36,22 +36,44 @@ function clock(){
 }
 setInterval(clock,1000);
 
-function change(){
-    let result1 = document.getElementById('morning');
-    let result2 = result1.value;
-    document.getElementById('wake').innerHTML=result2;
+// function change(){
+//     let result1 = document.getElementById('morning');
+//     let result2 = result1.value;
+//     document.getElementById('wake').innerHTML=result2;
  
-    let result3 = document.getElementById('afternoon');
-    let result4 = result3.value;
-    document.getElementById('lunch').innerHTML=result4;
+//     let result3 = document.getElementById('afternoon');
+//     let result4 = result3.value;
+//     document.getElementById('lunch').innerHTML=result4;
 
-    let result5 = document.getElementById('evening');
-    let result6 = result5.value;
-    document.getElementById('nap').innerHTML=result6;
+//     let result5 = document.getElementById('evening');
+//     let result6 = result5.value;
+//     document.getElementById('nap').innerHTML=result6;
 
-    let result7 = document.getElementById('night');
-    let result8 = result7.value;
-    document.getElementById('nighttime').innerHTML=result8; 
+//     let result7 = document.getElementById('night');
+//     let result8 = result7.value;
+//     document.getElementById('nighttime').innerHTML=result8; 
+// }
+function change() {
+
+
+var e = document.getElementById("morning");
+var text1 = e.options[e.selectedIndex].text;
+
+var f = document.getElementById("afternoon");
+var text2 = f.options[f.selectedIndex].text;
+
+var g = document.getElementById("evening");
+  var text3 = g.options[g.selectedIndex].text;
+
+var go = document.getElementById('night') ;
+var text4 = go.options[go.selectedIndex].text; 
+
+
+     var idExist = document.getElementById("chg");
+    if(idExist){
+        idExist.innerHTML =  `<br> Wake Up Time : ${text1} <br><br> Lunch Time : ${text2}<br><br> Nap Time : ${text3} <br><br> Night Time : ${text4} `;
+    }
+ 
 }
 
 function settime(){
